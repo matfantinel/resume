@@ -25,6 +25,10 @@ export class MfResume {
             <li class="birthday">
               <svg-icon name="birthday"></svg-icon>
               <span>{this.calcYearsSince("1995-08-24")} years old</span>
+            </li>            
+            <li class="experience">
+              <svg-icon name="experience"></svg-icon>
+              <span>{this.calcYearsSince("2014-09-22")} years of experience</span>
             </li>
             <li class="location">
               <svg-icon name="location"></svg-icon>
@@ -54,11 +58,11 @@ export class MfResume {
         <section class="photo">
           <img
             class="avatar"
-            src="https://www.gravatar.com/avatar/32608c8d8f273ce2b11ab0d3d8e02bf9?s=250&d=mm&r=x"
+            src="https://www.gravatar.com/avatar/d3e0755978911619f8979bef9d843b44?s=250&d=mm&r=x"
           />
         </section>
         <section class="about">
-          <h5>About</h5>
+          <p class="section-title">About</p>
           <p>
             I am a software engineer from Brazil specializing in building fast,
             beautiful and high-quality web apps. I also enjoy Open Source
@@ -67,6 +71,8 @@ export class MfResume {
           </p>
         </section>
         <section class="work">
+          <p class="section-title">Professional Experience</p>
+          <hr></hr><hr></hr><hr></hr><hr></hr><hr></hr>
           {/* <h5>Professional Experience</h5>
           <div class="experience">
             <div class="title">
@@ -122,16 +128,19 @@ export class MfResume {
         </div> */}
         </section>
         <section class="education">
+          <p class="section-title">Education</p>
           <hr />
           <hr />
           <hr />
         </section>
         <section class="community">
+          <p class="section-title">Community</p>
           <hr />
           <hr />
           <hr />
         </section>
         <section class="skills">
+          <p class="section-title">Skills</p>
           <hr />
           <hr />
           <hr />
