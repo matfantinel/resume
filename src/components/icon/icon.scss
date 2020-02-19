@@ -1,0 +1,9 @@
+:host {
+  display: inline;
+
+  svg {
+    fill: var(--accent-color);
+    max-width: 20px;
+    height: 20px;
+  }
+}

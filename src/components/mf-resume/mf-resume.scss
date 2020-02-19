@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
+:host {
+  --accent-color: #0ca4a5;
+  --text-color: #333333;
+  --faded-text-color: #777777;
+
+  display: block;
+
+  .resume {
+    width: 210mm;
+    height: 297mm;
+    overflow: hidden;
+    box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.6),
+      1px 3px 8px rgba(39, 44, 49, 0.3);
+    border-radius: 10px;
+    margin: 20px auto 0;
+    padding: 30px 20px;
+    display: grid;
+    color: var(--text-color);
+    font-family: Ubuntu, sans-serif;
+
+    section {
+      border: 1px solid #8a8a8a;
+      padding: 1em;
+      margin: 10px;
+      border-radius: 10px;
+
+      &.name-and-contact {
+        grid-area: name;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h1 {
+          font-size: 56px;
+          margin: 0;
+          font-weight: 300;
+          color: var(--accent-color);
+        }
+
+        h5 {
+          color: var(--faded-text-color);
+          margin: 0;
+          font-size: 24px;
+          font-weight: 300;
+        }
+
+        ul {
+          list-style: none;
+          padding: 0;
+          display: grid;
+
+          li {
+            display: flex;
+            align-items: center;
+
+            svg-icon {
+              margin-right: 10px;
+            }
+
+            a {
+              text-decoration: none;
+              color: var(--text-color);
+              border-bottom: 1px dotted var(--accent-color);
+              padding-bottom: 2px;
+
+              &:hover {
+                color: var(--accent-color);
+                border-bottom-style: solid;
+              }
+            }
+
+            &.birthday {
+              grid-area: birthday;
+            }
+            &.location {
+              grid-area: location;
+            }
+            &.email {
+              grid-area: email;
+            }
+            &.linkedin {
+              grid-area: linkedin;
+            }
+            &.telegram {
+              grid-area: telegram;
+            }
+          }
+        }
+      }
+      &.photo {
+        grid-area: photo;
+
+        .avatar {
+          border-radius: 50%;
+          border: 3px solid var(--accent-color);
+          max-width: 100%;
+          box-sizing: border-box;
+        }
+      }
+      &.about {
+        grid-area: about;
+      }
+      &.work {
+        grid-area: work;
+      }
+      &.education {
+        grid-area: education;
+      }
+      &.community {
+        grid-area: community;
+      }
+      &.skills {
+        grid-area: skills;
+      }
+    }
+  }
+
+  // Easily configurable stuff for easy access
+  .resume {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+
+    grid-template-areas:
+      "name photo"
+      "work about"
+      "work skills"
+      "community education";
+
+    section.name-and-contact ul {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 5px;
+
+      grid-template-areas:
+        "location linkedin"
+        "birthday email"
+        ". telegram";
+    }
+  }
+}
+
+@media print {
+  .resume {
+    box-shadow: none;
+  }
+}
+
+@page {
+  padding: 0;
+  margin: 0cm;
+  size: A4 portrait;
+}
