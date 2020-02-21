@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
 :host {
+  --background-color: #fff;
   --accent-color: #0ca4a5;
   --subtle-accent-color: #e3ffff;
   --secondary-color: #7d68d0;
@@ -15,6 +16,7 @@
     display: grid;
     color: var(--text-color);
     font-family: Ubuntu, sans-serif;
+    background-color: var(--background-color);
 
     section {
       padding: 5px;
@@ -296,6 +298,19 @@
           }
       }
     }    
+  }
+}
+
+//Dark mode
+@media (prefers-color-scheme: dark)  {
+  :host {
+    --background-color: #32343e;
+    --accent-color: #00f9fb;
+    --subtle-accent-color: #005B5B;
+    --secondary-color: #a491f1;
+    --subtle-secondary-color: #2d2a3e;
+    --text-color: #dffcfd;
+    --subtle-text-color: #9eb4b5;
   }
 }
 
