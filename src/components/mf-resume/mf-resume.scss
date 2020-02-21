@@ -10,20 +10,14 @@
   display: block;
 
   .resume {
-    width: 210mm;
-    height: 297mm;
-    overflow: hidden;
-    box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.6),
-      1px 3px 8px rgba(39, 44, 49, 0.3);
     border-radius: 10px;
-    margin: 20px auto 0;
-    padding: 30px 20px;
+    padding: 10px 0;
     display: grid;
     color: var(--text-color);
     font-family: Ubuntu, sans-serif;
 
     section {
-      padding: 1em;
+      padding: 5px;
       margin: 10px;
       border-radius: 10px;
 
@@ -45,6 +39,7 @@
           margin: 0;
           font-weight: 300;
           color: var(--accent-color);
+          text-align: center;
         }
 
         h5 {
@@ -52,12 +47,15 @@
           margin: 0;
           font-size: 24px;
           font-weight: 300;
+          text-align: center;
         }
 
         ul {
           list-style: none;
           padding: 0;
           display: grid;
+          margin-left: auto;
+          margin-right: auto;
 
           li {
             display: flex;
@@ -108,11 +106,15 @@
       }
       &.photo {
         grid-area: photo;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         .avatar {
           border-radius: 50%;
           border: 3px solid var(--accent-color);
           max-width: 100%;
+          max-height: 150px;
           box-sizing: border-box;
         }
       }
@@ -209,32 +211,97 @@
 
   // Easily configurable stuff for easy access
   .resume {
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-gap: 5px;
 
-    grid-template-areas:
-      "name photo"
-      "work about"
-      "work skills"
-      "work education";
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "photo"
+      "name"
+      "about"
+      "skills"
+      "work"
+      "education";
 
-    section.name-and-contact ul {
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 5px;
+    @media (min-width: 768px) {
+      padding: 30px 20px;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
 
       grid-template-areas:
-        "location linkedin"
-        "birthday github"
-        "experience email"
-        "languages website";
+        "name photo"
+        "work about"
+        "work skills"
+        "work education";
+
+        section {
+          padding: 16px;
+
+          &.name-and-contact {
+            h1, h5 {
+              text-align: left;
+            }
+          }
+        }
     }
+
+    @media (min-width: 900px) {
+      margin: 20px auto;
+      max-width: 210mm;
+      max-height: 297mm;
+      overflow: hidden;
+      box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.6),
+        1px 3px 8px rgba(39, 44, 49, 0.3);
+    }
+
+    section.name-and-contact ul {
+      grid-gap: 10px;
+      grid-template-columns: 1fr 1fr;
+
+      grid-template-areas:
+        "email email"
+        "website website"
+        "location languages"
+        "birthday experience"
+        "github linkedin";
+
+      li {
+        &.email{
+          margin: 0 auto;
+        }
+        &.website {
+          display: none;
+        }
+      }
+
+      @media (min-width: 768px) {
+        margin-left: 0;
+        margin-right: 0;
+        
+        grid-gap: 5px;
+        grid-template-columns: 1fr 1fr;
+
+        grid-template-areas:
+          "location github"
+          "birthday linkedin"
+          "experience email"
+          "languages website";
+
+          li {
+            &.email{
+              margin: 0;
+            }
+            &.website {
+              display: block;
+            }
+          }
+      }
+    }    
   }
 }
 
+// Print-specific styles
 @media print {
   :host {
-
     .resume {
       box-shadow: none;
     }
