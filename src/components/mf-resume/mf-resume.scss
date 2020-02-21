@@ -248,9 +248,7 @@
 
     @media (min-width: 900px), print {
       margin: 20px auto;
-      max-width: 210mm;
-      max-height: 287mm;
-      overflow: hidden;
+      max-width: 210mm;      
       box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.6),
         1px 3px 8px rgba(39, 44, 49, 0.3);
     }
@@ -321,6 +319,8 @@
       box-shadow: none;
       margin: 0;
       padding: 0;
+      max-height: 287mm;
+      overflow: hidden;
 
       section {
         margin: 0;
