@@ -76,11 +76,11 @@ export class MfResume {
         <section class="about">
           <p class="section-title">About</p>
           <p>
-            I have a passion for building fast, responsive and pretty UIs, 
-            bringing great designs to reality and improving them as they
-            get built. I love learning new things and applying them in
-            practical solutions, either improving existing services or
-            building completely new ones.
+            I have a passion for building fast, responsive and pretty UIs,
+            bringing great designs to reality and improving them as they get
+            built. I love learning new things and applying them in practical
+            solutions, either improving existing services or building completely
+            new ones.
           </p>
         </section>
         <section class="work">
@@ -120,25 +120,30 @@ export class MfResume {
                   <span class="company-name">SIGE Cloud</span> —{" "}
                   <i>Software Developer</i>
                 </div>
-                <small>July 2017 -~July 2019</small>
+                <small>July 2017 ~July 2019</small>
               </div>
 
               <ul>
                 <li>
-                  Bringing complex designs to reality, based on visual mockups
-                  and prototypes;
+                  Big part on planning and developing a simplified ERP software
+                  focused on small companies, built from scratch;
                 </li>
                 <li>
-                  Analysis, planning and development of a web-based ERP
-                  software;
+                  Development of an Android and iOS app that acts as an
+                  extension to the company’s main product;
                 </li>
                 <li>
-                  Participating in the creation of new solutions to meet the
-                  market's needs;
+                  Development of an internal HelpDesk software, including the
+                  creation and execution of support tickets, as well as the
+                  creation of reports and views of general data;
                 </li>
                 <li>
-                  Development of internal tools to improve the company's
-                  customer support service;
+                  Partial automation of the HelpDesk system, utilizing Machine
+                  Learning to reduce the amount of opened tickets by over 10%;
+                </li>
+                <li>
+                  Successfully applying the Microfrontends approach to redesign
+                  and modernize a legacy product;
                 </li>
               </ul>
             </div>
@@ -185,7 +190,7 @@ export class MfResume {
 
           <ul>
             <li>
-              <strong>Front-end</strong>
+              Front-end
               <div class="tags-container">
                 <span class="tag">Angular</span>
                 <span class="tag">Vue</span>
@@ -199,7 +204,7 @@ export class MfResume {
               </div>
             </li>
             <li>
-              <strong>Back-end</strong>
+              Back-end
               <div class="tags-container">
                 <span class="tag secondary">C#</span>
                 <span class="tag secondary">.NET</span>

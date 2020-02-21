@@ -130,9 +130,10 @@
                 font-size: 18px;
                 display: block;
                 margin-bottom: 5px;
-                color: var(--accent-color);
+                color: var(--subtle-text-color);
 
                 .company-name {
+                  color: var(--accent-color);
                   font-size: 20px;
                 }
               }
