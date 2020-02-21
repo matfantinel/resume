@@ -40,7 +40,7 @@ export class MfResume {
               <svg-icon name="email"></svg-icon>
               <a href="mailto:matheus@fantinel.dev">matheus@fantinel.dev</a>
             </li>
-            <li class="linkedin">
+            <li class="linkedin screen-only">
               <svg-icon name="linkedin"></svg-icon>
               <a
                 href="https://www.linkedin.com/in/matheus-fantinel/"
@@ -55,7 +55,7 @@ export class MfResume {
                 fantinel.dev
               </a>
             </li>
-            <li class="github">
+            <li class="github screen-only">
               <svg-icon name="github"></svg-icon>
               <a href="https://github.com/matfantinel" target="_blank">
                 GitHub Profile

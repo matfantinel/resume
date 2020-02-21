@@ -222,7 +222,7 @@
       "work"
       "education";
 
-    @media (min-width: 768px) {
+    @media (min-width: 768px), print {
       padding: 30px 20px;
       grid-template-columns: 2fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -244,10 +244,10 @@
         }
     }
 
-    @media (min-width: 900px) {
+    @media (min-width: 900px), print {
       margin: 20px auto;
       max-width: 210mm;
-      max-height: 297mm;
+      max-height: 287mm;
       overflow: hidden;
       box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.6),
         1px 3px 8px rgba(39, 44, 49, 0.3);
@@ -273,7 +273,7 @@
         }
       }
 
-      @media (min-width: 768px) {
+      @media (min-width: 768px), print {
         margin-left: 0;
         margin-right: 0;
         
@@ -304,7 +304,30 @@
   :host {
     .resume {
       box-shadow: none;
+      margin: 0;
+      padding: 0;
+
+      section {
+        margin: 0;
+
+        &.name-and-contact ul {
+          grid-template-areas:
+            "location email"
+            "birthday website"
+            "experience ."
+            "languages .";
+        }
+      }
+
+      .screen-only {
+        display: none !important;
+      }
+
+      a {
+        border: none !important;
+      }
     }
+
   }
 }
 
