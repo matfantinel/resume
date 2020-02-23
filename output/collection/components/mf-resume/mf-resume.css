@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
+:host {
+  --background-color: #fff;
+  --accent-color: #0ca4a5;
+  --subtle-accent-color: #e3ffff;
+  --secondary-color: #7d68d0;
+  --subtle-secondary-color: #f2efff;
+  --text-color: #333333;
+  --subtle-text-color: #777777;
+  display: block;
+  font-size: 18px;
+}
+:host .resume {
+  border-radius: 10px;
+  padding: 10px 0;
+  display: grid;
+  color: var(--text-color);
+  font-family: Ubuntu, sans-serif;
+  background-color: var(--background-color);
+}
+:host .resume section {
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+}
+:host .resume section .section-title {
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--accent-color);
+}
+:host .resume section.name-and-contact {
+  grid-area: name;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+:host .resume section.name-and-contact h1 {
+  font-size: 56px;
+  margin: 0;
+  font-weight: 300;
+  color: var(--accent-color);
+  text-align: center;
+}
+:host .resume section.name-and-contact h5 {
+  color: var(--subtle-text-color);
+  margin: 0;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+:host .resume section.name-and-contact ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+}
+:host .resume section.name-and-contact ul li {
+  display: flex;
+  align-items: center;
+}
+:host .resume section.name-and-contact ul li svg-icon {
+  margin-right: 10px;
+}
+:host .resume section.name-and-contact ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  border-bottom: 1px dotted var(--accent-color);
+  padding-bottom: 2px;
+}
+:host .resume section.name-and-contact ul li a:hover {
+  color: var(--accent-color);
+  border-bottom-style: solid;
+}
+:host .resume section.name-and-contact ul li.birthday {
+  grid-area: birthday;
+}
+:host .resume section.name-and-contact ul li.location {
+  grid-area: location;
+}
+:host .resume section.name-and-contact ul li.experience {
+  grid-area: experience;
+}
+:host .resume section.name-and-contact ul li.email {
+  grid-area: email;
+}
+:host .resume section.name-and-contact ul li.linkedin {
+  grid-area: linkedin;
+}
+:host .resume section.name-and-contact ul li.website {
+  grid-area: website;
+}
+:host .resume section.name-and-contact ul li.github {
+  grid-area: github;
+}
+:host .resume section.name-and-contact ul li.languages {
+  grid-area: languages;
+}
+:host .resume section.photo {
+  grid-area: photo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+:host .resume section.photo .avatar {
+  border-radius: 50%;
+  border: 3px solid var(--accent-color);
+  max-width: 100%;
+  max-height: 150px;
+  box-sizing: border-box;
+}
+:host .resume section.about {
+  grid-area: about;
+}
+:host .resume section.work {
+  grid-area: work;
+}
+:host .resume section.work .experiences-container .experience {
+  margin-top: 16px;
+}
+:host .resume section.work .experiences-container .experience .title div {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 5px;
+  color: var(--subtle-text-color);
+}
+:host .resume section.work .experiences-container .experience .title div .company-name {
+  color: var(--accent-color);
+  font-size: 20px;
+}
+:host .resume section.work .experiences-container .experience .title small {
+  font-size: 16px;
+  color: var(--subtle-text-color);
+}
+:host .resume section.work .experiences-container .experience ul {
+  padding: 0;
+  margin-top: 20px;
+  padding-left: 16px;
+  text-align: justify;
+}
+:host .resume section.work .experiences-container .experience ul li {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+:host .resume section.work .experiences-container .experience ul li::marker {
+  color: var(--accent-color);
+}
+:host .resume section.education {
+  grid-area: education;
+}
+:host .resume section.community {
+  grid-area: community;
+}
+:host .resume section.skills {
+  grid-area: skills;
+}
+:host .resume section.skills ul {
+  list-style: none;
+  padding: 0;
+}
+:host .tags-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 2px 0 5px;
+}
+:host .tag {
+  background-color: var(--subtle-accent-color);
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  border-radius: 0.25em;
+  display: inline-block;
+  font-size: 0.75em;
+  line-height: 2em;
+  margin: 0.125em;
+  padding: 0 0.5em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+:host .tag.secondary {
+  background-color: var(--subtle-secondary-color);
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+:host .resume {
+  grid-gap: 5px;
+  grid-template-columns: 1fr;
+  grid-template-areas: "photo" "name" "about" "skills" "work" "education";
+}
+@media (min-width: 768px), print {
+  :host .resume {
+    padding: 30px 20px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "name photo" "work about" "work skills" "work education";
+  }
+  :host .resume section {
+    padding: 16px;
+  }
+  :host .resume section.name-and-contact h1, :host .resume section.name-and-contact h5 {
+    text-align: left;
+  }
+}
+@media (min-width: 900px), print {
+  :host .resume {
+    margin: 20px auto;
+    max-width: 210mm;
+    box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.6), 1px 3px 8px rgba(39, 44, 49, 0.3);
+  }
+}
+:host .resume section.name-and-contact ul {
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "email email" "website website" "location languages" "birthday experience" "github linkedin";
+}
+:host .resume section.name-and-contact ul li.email {
+  margin: 0 auto;
+}
+:host .resume section.name-and-contact ul li.website {
+  display: none;
+}
+@media (min-width: 768px), print {
+  :host .resume section.name-and-contact ul {
+    margin-left: 0;
+    margin-right: 0;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "location github" "birthday linkedin" "experience email" "languages website";
+  }
+  :host .resume section.name-and-contact ul li.email {
+    margin: 0;
+  }
+  :host .resume section.name-and-contact ul li.website {
+    display: block;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :host {
+    --background-color: #32343e;
+    --accent-color: #00f9fb;
+    --subtle-accent-color: #005B5B;
+    --secondary-color: #a491f1;
+    --subtle-secondary-color: #2d2a3e;
+    --text-color: #dffcfd;
+    --subtle-text-color: #9eb4b5;
+  }
+}
+@media print {
+  :host .resume {
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    max-height: 287mm;
+    overflow: hidden;
+  }
+  :host .resume section {
+    margin: 0;
+  }
+  :host .resume section.name-and-contact ul {
+    grid-template-areas: "location email" "birthday website" "experience ." "languages .";
+  }
+  :host .resume .screen-only {
+    display: none !important;
+  }
+  :host .resume a {
+    border: none !important;
+  }
+}
+@page {
+  padding: 0;
+  margin: 0cm;
+  size: A4 portrait;
+}
