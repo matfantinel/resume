@@ -1,5 +1,8 @@
 import { h } from "@stencil/core";
 export class MfResume {
+    constructor() {
+        this.showDownloadLink = false;
+    }
     calcYearsSince(date) {
         const birthday = new Date(date);
         const ageDifMs = Date.now() - birthday.getTime();
@@ -8,6 +11,8 @@ export class MfResume {
     }
     render() {
         return (h("article", { class: "resume" },
+            this.showDownloadLink ? (h("div", { class: "download-pdf screen-only" },
+                h("a", { href: "https://github.com/matfantinel/resume/raw/master/Matheus%20Fantinel's%20Resum%C3%A9.pdf" }, "Download as PDF"))) : (""),
             h("section", { class: "name-and-contact" },
                 h("div", null,
                     h("h1", null, "Matheus Fantinel"),
@@ -130,5 +135,25 @@ export class MfResume {
     }; }
     static get styleUrls() { return {
         "$": ["mf-resume.css"]
+    }; }
+    static get properties() { return {
+        "showDownloadLink": {
+            "type": "boolean",
+            "mutable": false,
+            "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+            },
+            "required": false,
+            "optional": false,
+            "docs": {
+                "tags": [],
+                "text": ""
+            },
+            "attribute": "show-download-link",
+            "reflect": false,
+            "defaultValue": "false"
+        }
     }; }
 }

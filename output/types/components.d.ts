@@ -10,7 +10,9 @@ import { HTMLStencilElement, JSXBase } from './stencil.core';
 
 
 export namespace Components {
-  interface MfResume {}
+  interface MfResume {
+    'showDownloadLink': boolean;
+  }
   interface SvgIcon {
     'name': string;
   }
@@ -37,7 +39,9 @@ declare global {
 }
 
 declare namespace LocalJSX {
-  interface MfResume {}
+  interface MfResume {
+    'showDownloadLink'?: boolean;
+  }
   interface SvgIcon {
     'name'?: string;
   }

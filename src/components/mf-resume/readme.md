@@ -5,6 +5,13 @@
 <!-- Auto Generated Below -->
 
 
+## Properties
+
+| Property           | Attribute            | Description | Type      | Default |
+| ------------------ | -------------------- | ----------- | --------- | ------- |
+| `showDownloadLink` | `show-download-link` |             | `boolean` | `false` |
+
+
 ## Dependencies
 
 ### Depends on
