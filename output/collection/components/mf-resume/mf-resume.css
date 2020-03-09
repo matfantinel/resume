@@ -12,7 +12,7 @@
 }
 :host .resume {
   border-radius: 10px;
-  padding: 10px 0;
+  padding: 35px 0 10px 0;
   display: grid;
   color: var(--text-color);
   font-family: Ubuntu, sans-serif;
@@ -238,6 +238,8 @@
 
 .download-pdf {
   position: absolute;
+  top: 15px;
+  right: 20px;
 }
 .download-pdf a {
   text-decoration: none;
@@ -252,7 +254,6 @@
 @media (min-width: 768px) {
   .download-pdf {
     top: 20px;
-    right: 20px;
   }
 }
 
