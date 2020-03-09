@@ -11,24 +11,6 @@
   display: block;
   font-size: 18px;
 
-  .download-pdf {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-
-    a {
-      text-decoration: none;
-      color: var(--text-color);
-      border-bottom: 1px dotted var(--accent-color);
-      padding-bottom: 2px;
-
-      &:hover {
-        color: var(--accent-color);
-        border-bottom-style: solid;
-      }
-    }
-  }
-
   .resume {
     border-radius: 10px;
     padding: 10px 0;
@@ -316,6 +298,27 @@
           }
       }
     }    
+  }
+}
+
+.download-pdf {
+  a {
+    text-decoration: none;
+    color: var(--text-color);
+    border-bottom: 1px dotted var(--accent-color);
+    padding-bottom: 2px;
+
+    &:hover {
+      color: var(--accent-color);
+      border-bottom-style: solid;
+    }
+  }
+
+  position: absolute;  
+
+  @media (min-width: 768px) {
+    top: 20px;
+    right: 20px;
   }
 }
 
