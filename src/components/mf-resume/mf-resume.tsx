@@ -1,4 +1,4 @@
-import { Component, h } from "@stencil/core";
+import { Component, h, Prop } from "@stencil/core";
 
 @Component({
   tag: "mf-resume",
@@ -6,6 +6,8 @@ import { Component, h } from "@stencil/core";
   shadow: true
 })
 export class MfResume {
+  @Prop() showDownloadLink: boolean = false;
+
   calcYearsSince(date: string) {
     const birthday = new Date(date);
     const ageDifMs = Date.now() - birthday.getTime();
@@ -16,6 +18,15 @@ export class MfResume {
   render() {
     return (
       <article class="resume">
+        {this.showDownloadLink ? (
+          <div class="download-pdf screen-only">
+            <a href="https://github.com/matfantinel/resume/raw/master/Matheus%20Fantinel's%20Resum%C3%A9.pdf">
+              Download as PDF
+            </a>
+          </div>
+        ) : (
+          ""
+        )}
         <section class="name-and-contact">
           <div>
             <h1>Matheus Fantinel</h1>
