@@ -26,6 +26,6 @@ Need help? Check out Stencil docs [here](https://stenciljs.com/docs/my-first-com
 
 ### Script tag
 
-- Import the script like this: `<script src="https://cdn.jsdelivr.net/gh/matfantinel/resume/output/resume.js"></script>`
+- Import the script like this: `<script src="https://cdn.jsdelivr.net/gh/matfantinel/resume@master/output/resume.js"></script>`
 - Then just add it to your HTML like this: `<mf-resume></mf-resume>`
 - Profit!
