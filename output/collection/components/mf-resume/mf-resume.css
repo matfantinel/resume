@@ -10,21 +10,6 @@
   display: block;
   font-size: 18px;
 }
-:host .download-pdf {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-:host .download-pdf a {
-  text-decoration: none;
-  color: var(--text-color);
-  border-bottom: 1px dotted var(--accent-color);
-  padding-bottom: 2px;
-}
-:host .download-pdf a:hover {
-  color: var(--accent-color);
-  border-bottom-style: solid;
-}
 :host .resume {
   border-radius: 10px;
   padding: 10px 0;
@@ -248,6 +233,26 @@
   }
   :host .resume section.name-and-contact ul li.website {
     display: block;
+  }
+}
+
+.download-pdf {
+  position: absolute;
+}
+.download-pdf a {
+  text-decoration: none;
+  color: var(--text-color);
+  border-bottom: 1px dotted var(--accent-color);
+  padding-bottom: 2px;
+}
+.download-pdf a:hover {
+  color: var(--accent-color);
+  border-bottom-style: solid;
+}
+@media (min-width: 768px) {
+  .download-pdf {
+    top: 20px;
+    right: 20px;
   }
 }
 
