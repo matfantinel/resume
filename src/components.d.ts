@@ -15,6 +15,7 @@ export namespace Components {
   }
   interface SvgIcon {
     'name': string;
+    'small': boolean;
   }
 }
 
@@ -44,6 +45,7 @@ declare namespace LocalJSX {
   }
   interface SvgIcon {
     'name'?: string;
+    'small'?: boolean;
   }
 
   interface IntrinsicElements {

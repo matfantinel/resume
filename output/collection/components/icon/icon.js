@@ -1,7 +1,7 @@
 import { h } from "@stencil/core";
 export class Icon {
     render() {
-        return (h("span", null, this.name == "birthday"
+        return (h("span", { class: this.small ? 'small' : '' }, this.name == "birthday"
             ? (h("svg", { viewBox: "0 0 469.333 469.333" },
                 " ",
                 h("g", null,
@@ -309,6 +309,23 @@ export class Icon {
                 "text": ""
             },
             "attribute": "name",
+            "reflect": false
+        },
+        "small": {
+            "type": "boolean",
+            "mutable": false,
+            "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+            },
+            "required": false,
+            "optional": false,
+            "docs": {
+                "tags": [],
+                "text": ""
+            },
+            "attribute": "small",
             "reflect": false
         }
     }; }

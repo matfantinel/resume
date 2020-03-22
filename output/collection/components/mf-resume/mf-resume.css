@@ -133,6 +133,7 @@
 :host .resume section.work .experiences-container .experience .title small {
   font-size: 16px;
   color: var(--subtle-text-color);
+  fill: var(--subtle-text-color);
 }
 :host .resume section.work .experiences-container .experience ul {
   padding: 0;

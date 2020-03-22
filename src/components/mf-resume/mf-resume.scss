@@ -146,6 +146,10 @@
               small {
                 font-size: 16px;
                 color: var(--subtle-text-color);
+
+                // svg-icon svg {
+                  fill: var(--subtle-text-color);
+                // }
               }
             }
 

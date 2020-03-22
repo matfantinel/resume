@@ -103,10 +103,9 @@ export class MfResume {
                 <div>
                   <span class="company-name">
                     Dynasty Sports & Entertainment
-                  </span>{" "}
-                  — <i>Software Engineer</i>
+                  </span>
                 </div>
-                <small>August 2019 ~ Now</small>
+                <small>Software Engineer | <svg-icon name="location" small={true}></svg-icon> Remote | August 2019 ~ Now</small>
               </div>
 
               <ul>
@@ -128,10 +127,9 @@ export class MfResume {
             <div class="experience">
               <div class="title">
                 <div>
-                  <span class="company-name">SIGE Cloud</span> —{" "}
-                  <i>Software Developer</i>
+                  <span class="company-name">SIGE Cloud</span>
                 </div>
-                <small>July 2017 ~July 2019</small>
+                <small>Software Developer | <svg-icon name="location" small={true}></svg-icon> Caxias do Sul | July 2017 ~ July 2019</small>
               </div>
 
               <ul>
@@ -162,10 +160,9 @@ export class MfResume {
             <div class="experience">
               <div class="title">
                 <div>
-                  <span class="company-name">Promob Software Solutions</span> —{" "}
-                  <i>Software Developer</i>
+                  <span class="company-name">Promob Software Solutions</span>
                 </div>
-                <small>September 2014 ~ June 2017</small>
+                <small>Software Developer | <svg-icon name="location" small={true}></svg-icon> Caxias do Sul | September 2014 ~ June 2017</small>
               </div>
 
               <ul>
