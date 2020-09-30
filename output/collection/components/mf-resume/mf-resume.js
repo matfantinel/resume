@@ -12,7 +12,7 @@ export class MfResume {
     render() {
         return (h("article", { class: "resume" },
             this.showDownloadLink ? (h("div", { class: "download-pdf screen-only" },
-                h("a", { href: "https://github.com/matfantinel/resume/raw/master/Matheus%20Fantinel's%20Resum%C3%A9.pdf" }, "Download as PDF"))) : (""),
+                h("a", { href: "https://github.com/matfantinel/resume/raw/master/Matheus%20Fantinel's%20Resume.pdf" }, "Download as PDF"))) : (""),
             h("section", { class: "name-and-contact" },
                 h("div", null,
                     h("h1", null, "Matheus Fantinel"),
@@ -33,7 +33,7 @@ export class MfResume {
                         h("span", null, "Caxias do Sul, RS, Brazil")),
                     h("li", { class: "email" },
                         h("svg-icon", { name: "email" }),
-                        h("a", { href: "mailto:matheus@fantinel.dev" }, "matheus@fantinel.dev")),
+                        h("a", { href: "mailto:matfantinel@gmail.com" }, "matfantinel@gmail.com")),
                     h("li", { class: "linkedin screen-only" },
                         h("svg-icon", { name: "linkedin" }),
                         h("a", { href: "https://www.linkedin.com/in/matheus-fantinel/", target: "_blank" }, "LinkedIn Profile")),
