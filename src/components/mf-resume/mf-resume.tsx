@@ -20,7 +20,7 @@ export class MfResume {
       <article class="resume">
         {this.showDownloadLink ? (
           <div class="download-pdf screen-only">
-            <a href="https://github.com/matfantinel/resume/raw/master/Matheus%20Fantinel's%20Resum%C3%A9.pdf">
+            <a href="https://github.com/matfantinel/resume/raw/master/Matheus%20Fantinel's%20Resume.pdf">
               Download as PDF
             </a>
           </div>
@@ -49,7 +49,7 @@ export class MfResume {
             </li>
             <li class="email">
               <svg-icon name="email"></svg-icon>
-              <a href="mailto:matheus@fantinel.dev">matheus@fantinel.dev</a>
+              <a href="mailto:matfantinel@gmail.com">matfantinel@gmail.com</a>
             </li>
             <li class="linkedin screen-only">
               <svg-icon name="linkedin"></svg-icon>
