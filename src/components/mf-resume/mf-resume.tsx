@@ -29,8 +29,8 @@ export class MfResume {
         )}
         <section class="name-and-contact">
           <div>
-            <h1>Matheus Fantinel</h1>
-            <h5>Software Developer</h5>
+            <mf-logotype></mf-logotype>
+            <h5>Web Developer</h5>
           </div>
           <ul>
             <li class="birthday">
@@ -49,7 +49,7 @@ export class MfResume {
             </li>
             <li class="email">
               <svg-icon name="email"></svg-icon>
-              <a href="mailto:matfantinel@gmail.com">matfantinel@gmail.com</a>
+              <a href="mailto:matt@fantinel.dev">matt@fantinel.dev</a>
             </li>
             <li class="linkedin screen-only">
               <svg-icon name="linkedin"></svg-icon>
@@ -110,16 +110,12 @@ export class MfResume {
 
               <ul>
                 <li>
-                  Development and maintenance of a Vue front-end, aiming to
-                  solve current pains and create new and better processes;
-                </li>
-                <li>
-                  Working with Azure Service Bus messages to execute tasks on
-                  demand;
+                  Working on a Vue front-end project, aiming to solve current pains 
+                  and create new and better processes to manage ticket sales and brokerage;
                 </li>
                 <li>
                   Automating of previously manual processes with Selenium,
-                  improving speed and capacity;
+                  improving speed and scalability;
                 </li>
               </ul>
             </div>
@@ -129,16 +125,20 @@ export class MfResume {
                 <div>
                   <span class="company-name">SIGE Cloud</span>
                 </div>
-                <small>Software Developer | <svg-icon name="location" small={true}></svg-icon> Caxias do Sul | July 2017 ~ July 2019</small>
+                <small>Software Developer | <svg-icon name="location" small={true}></svg-icon> Brazil | July 2017 ~ July 2019</small>
               </div>
 
               <ul>
+                <li>
+                  Successfully applying the Microfrontends approach to redesign
+                  and modernize a legacy product;
+                </li>
                 <li>
                   Big part on planning and developing a simplified ERP software
                   focused on small companies, built from scratch;
                 </li>
                 <li>
-                  Development of an Android and iOS app that acts as an
+                  Development of a mobile app that acts as an
                   extension to the company’s main product;
                 </li>
                 <li>
@@ -149,11 +149,7 @@ export class MfResume {
                 <li>
                   Partial automation of the HelpDesk system, utilizing Machine
                   Learning to reduce the amount of opened tickets by over 10%;
-                </li>
-                <li>
-                  Successfully applying the Microfrontends approach to redesign
-                  and modernize a legacy product;
-                </li>
+                </li>                
               </ul>
             </div>
 
@@ -162,7 +158,7 @@ export class MfResume {
                 <div>
                   <span class="company-name">Promob Software Solutions</span>
                 </div>
-                <small>Software Developer | <svg-icon name="location" small={true}></svg-icon> Caxias do Sul | September 2014 ~ June 2017</small>
+                <small>Software Developer | <svg-icon name="location" small={true}></svg-icon> Brazil | September 2014 ~ June 2017</small>
               </div>
 
               <ul>

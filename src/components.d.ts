@@ -10,6 +10,7 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
+  interface MfLogotype {}
   interface MfResume {
     'showDownloadLink': boolean;
   }
@@ -21,6 +22,12 @@ export namespace Components {
 
 declare global {
 
+
+  interface HTMLMfLogotypeElement extends Components.MfLogotype, HTMLStencilElement {}
+  var HTMLMfLogotypeElement: {
+    prototype: HTMLMfLogotypeElement;
+    new (): HTMLMfLogotypeElement;
+  };
 
   interface HTMLMfResumeElement extends Components.MfResume, HTMLStencilElement {}
   var HTMLMfResumeElement: {
@@ -34,12 +41,14 @@ declare global {
     new (): HTMLSvgIconElement;
   };
   interface HTMLElementTagNameMap {
+    'mf-logotype': HTMLMfLogotypeElement;
     'mf-resume': HTMLMfResumeElement;
     'svg-icon': HTMLSvgIconElement;
   }
 }
 
 declare namespace LocalJSX {
+  interface MfLogotype {}
   interface MfResume {
     'showDownloadLink'?: boolean;
   }
@@ -49,6 +58,7 @@ declare namespace LocalJSX {
   }
 
   interface IntrinsicElements {
+    'mf-logotype': MfLogotype;
     'mf-resume': MfResume;
     'svg-icon': SvgIcon;
   }
@@ -60,6 +70,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
   export namespace JSX {
     interface IntrinsicElements {
+      'mf-logotype': LocalJSX.MfLogotype & JSXBase.HTMLAttributes<HTMLMfLogotypeElement>;
       'mf-resume': LocalJSX.MfResume & JSXBase.HTMLAttributes<HTMLMfResumeElement>;
       'svg-icon': LocalJSX.SvgIcon & JSXBase.HTMLAttributes<HTMLSvgIconElement>;
     }
