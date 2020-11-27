@@ -1,0 +1,13 @@
+:host svg {
+  height: 40px;
+  width: auto;
+  max-width: 100%;
+}
+:host svg #web {
+  fill: var(--text-color);
+  stroke: var(--text-color);
+}
+:host svg #name {
+  fill: var(--accent-color);
+  stroke: var(--accent-color);
+}

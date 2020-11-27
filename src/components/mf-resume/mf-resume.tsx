@@ -29,7 +29,8 @@ export class MfResume {
         )}
         <section class="name-and-contact">
           <div>
-            <mf-logotype></mf-logotype>
+            {/* <mf-logotype></mf-logotype> */}
+            <h1>Matheus Fantinel</h1>
             <h5>Web Developer</h5>
           </div>
           <ul>
