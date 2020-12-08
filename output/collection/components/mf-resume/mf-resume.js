@@ -57,7 +57,7 @@ export class MfResume {
                     h("div", { class: "experience" },
                         h("div", { class: "title" },
                             h("div", null,
-                                h("span", { class: "company-name" }, "Dynasty Sports & Entertainment")),
+                                h("span", { class: "company-name" }, "Logitix")),
                             h("small", null,
                                 "Software Engineer | ",
                                 h("svg-icon", { name: "location", small: true }),

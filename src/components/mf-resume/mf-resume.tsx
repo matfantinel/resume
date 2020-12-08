@@ -103,7 +103,7 @@ export class MfResume {
               <div class="title">
                 <div>
                   <span class="company-name">
-                    Dynasty Sports & Entertainment
+                    Logitix
                   </span>
                 </div>
                 <small>Software Engineer | <svg-icon name="location" small={true}></svg-icon> Remote | August 2019 ~ Now</small>
