@@ -106,17 +106,18 @@ export class MfResume {
                     Logitix
                   </span>
                 </div>
-                <small>Software Engineer | <svg-icon name="location" small={true}></svg-icon> Remote | August 2019 ~ Now</small>
+                <small>Software Engineer | <svg-icon name="location" small={true}></svg-icon> Remote | August 2019 ~ February 2021</small>
               </div>
 
               <ul>
                 <li>
-                  Working on a Vue front-end project, aiming to solve current pains 
-                  and create new and better processes to manage ticket sales and brokerage;
+                  Working on a Vue front-end project, aiming to solve current pains and create new and better processes to manage ticket sales and brokerage in the US;
                 </li>
                 <li>
-                  Automating of previously manual processes with Selenium,
-                  improving speed and scalability;
+                  Building new ways of viewing and interacting with huge amounts of data;
+                </li>
+                <li>
+                  Automating previously manual processes with Selenium, improving speed and capacity;
                 </li>
               </ul>
             </div>
@@ -131,26 +132,17 @@ export class MfResume {
 
               <ul>
                 <li>
-                  Successfully applying the Microfrontends approach to redesign
-                  and modernize a legacy product;
+                  Applying the Microfrontends approach to modernize a legacy product;
                 </li>
                 <li>
-                  Big part on planning and developing a simplified ERP software
-                  focused on small companies, built from scratch;
+                  Developing a desktop app from scratch for a simplified ERP focused on small companies;
                 </li>
                 <li>
-                  Development of a mobile app that acts as an
-                  extension to the company’s main product;
+                  Developing a mobile app that acts as an extension to the company’s main product;
                 </li>
                 <li>
-                  Development of an internal HelpDesk software, including the
-                  creation and execution of support tickets, as well as the
-                  creation of reports and views of general data;
-                </li>
-                <li>
-                  Partial automation of the HelpDesk system, utilizing Machine
-                  Learning to reduce the amount of opened tickets by over 10%;
-                </li>                
+                  Developing an internal HelpDesk software using Artificial Intelligence to help users before they even opened the ticket;
+                </li>             
               </ul>
             </div>
 
@@ -164,16 +156,13 @@ export class MfResume {
 
               <ul>
                 <li>
-                  Maintenance and modernization of the company's services
-                  portal;
+                  Maintenance and modernization of the company's services portal;
                 </li>
                 <li>
-                  Development and maintenance of many APIs used by other
-                  development teams;
+                  Development and maintenance of many APIs used by other development teams;
                 </li>
                 <li>
-                  Refactoring of the company’s internal software structure,
-                  according to changes in the business model;
+                  Refactoring of the company’s internal software structure, according to changes in the business model;
                 </li>
                 <li>
                   Integration with third-party CRM, HelpDesk and ERP softwares;
